@@ -2,15 +2,18 @@
   "compilerOptions": {
     "declaration": false,
     "lib": ["es6", "dom"],
-    "module": "es6",
+    "module": "esnext",
     "moduleResolution": "node",
     "sourceMap": true,
-    "target": "es5",
+    "target": "es2017",
     "noImplicitAny": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     "esModuleInterop": true
   },
-  "exclude": ["node_modules"]
+  "include": [
+    "src/**/*",
+    "node_modules/@types/puppeteer/index.d.ts"
+  ]
 }
