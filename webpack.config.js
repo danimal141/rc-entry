@@ -9,13 +9,19 @@ module.exports = {
       filename: '[name].js'
     },
     resolve: {
-      extensions: ['.ts','.js']
+      extensions: ['.ts', '.js']
     },
     module: {
       rules: [
         {
-          test: /\.ts$/,loader:'ts-loader'
-        }
+          test: /\.ts$/,
+          loader: 'ts-loader'
+        },
+        {
+          test: /\.ts$/,
+          loader: 'eslint-loader',
+          options: { configFile: '.eslintrc.js' }
+        },
       ]
     }
 }
