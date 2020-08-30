@@ -1,3 +1,3 @@
-const message = 'Hello World'
+import entry from './entry'
 
-console.log(message)
+entry().catch(err => console.error(err))
