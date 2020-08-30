@@ -6,7 +6,7 @@ export default async function login(): Promise<puppeteer.Cookie[]> {
   const username = process.env.EMAIL
   const password = process.env.PASSWORD
   if (username == null || password == null) {
-    console.error('username and password must be specified')
+    console.error('Environment variables: EMAIL and PASSWORD must be specified')
     process.exit(1)
   }
 
