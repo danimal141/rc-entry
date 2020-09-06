@@ -7,7 +7,7 @@ import User from './models/User'
 
 describe('login', () => {
   it('should fill in the forms and click the login button', async () => {
-    const dummyUser: User = { username: 'some-user@gmail.com', password: 'some-pass' }
+    const dummyUser: User = { username: 'some-user@some-domain.com', password: 'some-pass' }
 
     await login(page, dummyUser)
     await expect(page).toFill(LOGIN_USERNAME_ID, dummyUser.username)
