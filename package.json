@@ -12,7 +12,8 @@
   "scripts": {
     "watch": "webpack --watch --mode=development",
     "build": "webpack --mode=development",
-    "lint": "eslint src/ --ext .ts,.tsx"
+    "lint": "eslint src/ --ext .ts",
+    "test": "jest"
   },
   "devDependencies": {
     "@types/expect-puppeteer": "^4.4.3",
@@ -27,6 +28,7 @@
     "eslint-loader": "^4.0.2",
     "jest": "^26.4.2",
     "jest-puppeteer": "^4.4.0",
+    "ts-jest": "^26.3.0",
     "ts-loader": "^8.0.3",
     "typescript": "^4.0.2",
     "webpack": "^4.44.1",
@@ -36,5 +38,26 @@
   "dependencies": {
     "puppeteer": "^5.2.1",
     "yargs": "^15.4.1"
+  },
+  "jest": {
+    "rootDir": "src",
+    "errorOnDeprecated": true,
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "ts"
+    ],
+    "testMatch": [
+      "<rootDir>/**/?(*.)spec.@(t|j)s"
+    ],
+    "preset": "jest-puppeteer",
+    "transform": {
+      "^.+\\.ts$": "ts-jest"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts}": [
+      "eslint --fix"
+    ]
   }
 }
