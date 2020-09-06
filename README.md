@@ -1,4 +1,5 @@
 # rc-entry
+This implements a way to join some campaign with `puppeteer`...
 
 ## Development
 - Build
