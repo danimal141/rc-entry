@@ -18,5 +18,5 @@ $ rc-entry
 
 ## Entry
 ```
-$ EMAIL='YOUR EMAIL' PASSWORD='YOUR PASSWORD' rc-entry
+$ rc-entry --username 'YOUR EMAIL' --password 'YOUR PASSWORD'
 ```
