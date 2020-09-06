@@ -8,7 +8,15 @@
 - Lint
     - `yarn lint`
 
+## Link
+```
+$ yarn link (or `npm link`)
+
+// Then rc-entry command can be used
+$ rc-entry
+```
+
 ## Entry
 ```
-$ EMAIL='YOUR EMAIL' PASSWORD='YOUR PASSWORD' node dist/bundle.js
+$ EMAIL='YOUR EMAIL' PASSWORD='YOUR PASSWORD' rc-entry
 ```
