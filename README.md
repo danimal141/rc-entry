@@ -2,21 +2,19 @@
 
 ## Development
 - Build
-    - `yarn build`
+  - `yarn build`
 - Watch code changes and keep building
-    - `yarn build`
+  - `yarn build`
 - Lint
-    - `yarn lint`
+  - `yarn lint`
+- Test
+  - `yarn test`
 
-## Link
-```
-$ yarn link (or `npm link`)
+- Link
+  - `yarn link`
+     - Then `rc-entry` command can be used
 
-// Then rc-entry command can be used
-$ rc-entry
-```
-
-## Entry
+## Usage
 ```
 $ rc-entry --username 'YOUR EMAIL' --password 'YOUR PASSWORD'
 ```
