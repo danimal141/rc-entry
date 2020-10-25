@@ -4,14 +4,12 @@ const options = yargs
   .options('username', {
     alias: 'u',
     type: 'string',
-    description: 'Your username',
-    demandOption: true
+    description: 'Your username'
   })
   .options('password', {
     alias: 'p',
     type: 'string',
-    description: 'Your password',
-    demandOption: true
+    description: 'Your password'
   })
   .help()
   .argv
