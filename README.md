@@ -18,4 +18,7 @@ This implements a way to join some campaign with `puppeteer`...
 ## Usage
 ```
 $ rc-entry --username 'YOUR EMAIL' --password 'YOUR PASSWORD'
+
+// Set `RC_USER`, `RC_PASS` in .env
+$ rc-entry
 ```
