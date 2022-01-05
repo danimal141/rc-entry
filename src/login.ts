@@ -3,10 +3,9 @@ import { Page, Cookie } from 'puppeteer'
 import User from './models/User'
 
 const LOGIN_URL = 'https://grp02.id.rakuten.co.jp/rms/nid/login'
-
-export const LOGIN_USERNAME_ID = '#loginInner_u'
-export const LOGIN_PASSWORD_ID = '#loginInner_p'
-export const LOGIN_BUTTON_CLASS = '.loginButton'
+const LOGIN_USERNAME_ID = '#loginInner_u'
+const LOGIN_PASSWORD_ID = '#loginInner_p'
+const LOGIN_BUTTON_CLASS = '.loginButton'
 
 export default async function login(page: Page, user: User): Promise<Cookie[]> {
   await page.goto(LOGIN_URL, { timeout: 30000, waitUntil: 'domcontentloaded' })

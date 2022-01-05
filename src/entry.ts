@@ -1,8 +1,7 @@
 import { Cookie, Page } from 'puppeteer'
 
 const ENTRY_URL = 'https://event.rakuten.co.jp/campaign/card/pointday/'
-
-export const TARGET_BUTTON_CLASS = '.rcEntryButton-button'
+const TARGET_BUTTON_CLASS = '.rcEntryButton-button'
 
 export default async function entry(page: Page, cookies: Cookie[]) {
   for (const cookie of cookies) { await page.setCookie(cookie) }
